@@ -10,8 +10,8 @@ public class Coinbase implements Exchange {
         this.url = "https://api.coinbase.com/v2/prices/";
     }
 
-    public String getUrl(String reprCode) {
-        return this.url + reprCode + "/spot";
+    public String getUrl(String ticker) {
+        return this.url + ticker + "/spot";
     }
 
     public double parseResponse(String response) {
